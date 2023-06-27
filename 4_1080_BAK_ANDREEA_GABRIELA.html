@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiect</title>
+  <link rel="stylesheet" href="4_1080_BAK_ANDREEA_GABRIELA.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="editor">
+      <div class="filter">
+        <label for="blur">Blur</label>
+        <input type="range" min="0" max="5" value="0" step="0.1" id="blur">
+      </div>
+
+      <div class="filter">
+        <label for="contrast">Contrast</label>
+        <input type="range" min="0" max="200" value="100" id="contrast">
+      </div>
+
+      <div class="filter">
+        <label for="hue-rotate">Hue-Rotate</label>
+        <input type="range" min="0" max="360" value="0" id="hue-rotate">
+      </div>
+
+      <div class="filter">
+        <label for="sepia">Sepia</label>
+        <input type="range" min="0" max="100" value="0" id="sepia">
+      </div>
+
+      <div class="text">
+        <label for="myInput">Add Text</label>
+        <input type="text" id="myInput" value="">
+      </div>
+
+      <div class="zoomBtn">
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomOut()">-</button>
+      </div>
+
+      <div class="crop">
+        <button id="cropBtn">Crop</button>
+      </div>
+
+      <div class="select">
+        <button id="selectBtn" >Select</button>
+        <button id="deleteSelArea" >Delete</button>
+       
+      </div>
+
+    </div>
+
+    <div class="result">
+      <div class="image-container">
+        <canvas id="myCanvas">
+      </div>
+      
+      <input type="file" id="imageFileInput" accept="Image/*">
+      <label for="imageFileInput">Upload Image</label>
+      
+      <button id="download">Download</button>
+    </div>
+  </div>
+  <script src="4_1080_BAK_ANDREEA_GABRIELA.js"></script>
+</body>
+</html>
